@@ -18,26 +18,7 @@ Y = [
 b0 = 76.451340
 b1 = 0.118846
 
-# Scatter Plot with Regression Line
 
-st.subheader("Scatter Plot and Regression Line")
-
-fig, ax = plt.subplots()
-
-ax.scatter(X, Y, label="Student Data")
-
-Y_line = [b0 + b1 * x for x in X]
-
-ax.plot(X, Y_line, label="Regression Line")
-
-ax.set_xlabel("Daily Social Media Screen Time (hours)")
-ax.set_ylabel("Exam Score (%)")
-ax.set_title("Social Media Usage vs Academic Performance")
-
-ax.legend()
-ax.grid(True)
-
-st.pyplot(fig)
 
 # Page title
 st.title("Social Media Usage vs Academic Performance")
@@ -67,3 +48,24 @@ if st.button("Predict Exam Score"):
     st.write(
         f"Regression Equation: Y = {b0:.4f} + {b1:.4f}X"
     )
+
+# Scatter Plot with Regression Line
+
+st.subheader("Scatter Plot and Regression Line")
+
+fig, ax = plt.subplots()
+
+ax.scatter(X, Y, label="Student Data")
+
+Y_line = [b0 + b1 * x for x in X]
+
+ax.plot(X, Y_line, label="Regression Line")
+
+ax.set_xlabel("Daily Social Media Screen Time (hours)")
+ax.set_ylabel("Exam Score (%)")
+ax.set_title("Social Media Usage vs Academic Performance")
+
+ax.legend()
+ax.grid(True)
+
+st.pyplot(fig)
