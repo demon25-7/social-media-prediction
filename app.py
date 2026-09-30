@@ -375,17 +375,3 @@ st.write(
 )
 
 
-# --------------------------------------------------
-# FOOTER
-# --------------------------------------------------
-
-st.divider()
-
-st.caption(
-    "🎓 Mathematics for Computer Engineering | "
-    "Statistical Techniques | Correlation & Linear Regression"
-)
-
-st.caption(
-    "👥 Group 10 | Batch S3 | Division 3"
-)
